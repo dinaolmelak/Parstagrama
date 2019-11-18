@@ -5,7 +5,7 @@
 //  Created by Dinaol Melak on 11/15/19.
 //  Copyright © 2019 Dinaol Melak. All rights reserved.
 //
-
+import Parse
 import UIKit
 
 @UIApplicationMain
@@ -15,6 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        Parse.initialize(
+            with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
+                configuration.applicationId = "myAppId"
+                configuration.server = "https://parstagrama.herokuapp.com/parse"
+            })
+        )
+        
+        
+        
         return true
     }
 
