@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		19DD634029AC034C562C703F /* Pods_Parstagrama.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55AB31E0FD9B136006245D9 /* Pods_Parstagrama.framework */; };
-		C0341AC62383DF8E001E8106 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0341AC52383DF8E001E8106 /* README.md */; };
 		C03FD1512383441100300F81 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03FD1502383441000300F81 /* FeedViewController.swift */; };
 		C03FD1532383442C00300F81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03FD1522383442C00300F81 /* LoginViewController.swift */; };
 		C03FD155238348A000300F81 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03FD154238348A000300F81 /* CameraViewController.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		B8D5E621EDFCB82B21CBB3BE /* Pods-Parstagrama.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagrama.debug.xcconfig"; path = "Target Support Files/Pods-Parstagrama/Pods-Parstagrama.debug.xcconfig"; sourceTree = "<group>"; };
-		C0341AC52383DF8E001E8106 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C03FD1502383441000300F81 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C03FD1522383442C00300F81 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C03FD154238348A000300F81 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				C03FD1522383442C00300F81 /* LoginViewController.swift */,
 				C03FD154238348A000300F81 /* CameraViewController.swift */,
 				C071BC182383A56500BE36CB /* PostCell.swift */,
-				C0341AC52383DF8E001E8106 /* README.md */,
 			);
 			path = Parstagrama;
 			sourceTree = "<group>";
@@ -165,7 +162,6 @@
 			files = (
 				C0553ED5237F0A0800645E1E /* LaunchScreen.storyboard in Resources */,
 				C0553ED2237F0A0800645E1E /* Assets.xcassets in Resources */,
-				C0341AC62383DF8E001E8106 /* README.md in Resources */,
 				C0553ED0237F09FF00645E1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
