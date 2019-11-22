@@ -23,7 +23,8 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
 
-    @IBAction func onSubmit(_ sender: Any) {
+    @IBAction func didTapSubmit(_ sender: Any) {
+        
         let post = PFObject(className: "Posts")
         
         post["caption"] = commentField.text
@@ -44,18 +45,19 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
         
     }
+    
     @IBAction func onTapCamera(_ sender: Any) {
         let picker = UIImagePickerController()
         
         picker.delegate = self
         picker.allowsEditing = true
         
-        if UIImagePickerController.isSourceTypeAvailable(.camera){
-            picker.sourceType = .camera
-        } else {
-            picker.sourceType = .photoLibrary
-        }
-        
+//        if UIImagePickerController.isSourceTypeAvailable(.camera){
+//            picker.sourceType = .camera
+//        } else {
+//            picker.sourceType = .photoLibrary
+//        }
+        picker.sourceType = .photoLibrary
         present(picker, animated: true, completion: nil)
         
     }
@@ -70,6 +72,9 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         dismiss(animated: true, completion: nil)
         
+    }
+    @IBAction func didTapCancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     

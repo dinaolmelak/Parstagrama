@@ -54,7 +54,14 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         return cell
     }
-
+    @IBAction func didTapLogOut(_ sender: Any) {
+        PFUser.logOut()
+        dismiss(animated: true, completion: nil)
+        print("Logged Out")
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
