@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import Alamofire
 import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -21,6 +22,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+        DataRequest.addAcceptableImageContentTypes(["application/octet-stream"])
     }
     override func viewDidAppear(_ animated: Bool) {
         let query = PFQuery(className: "Posts")
