@@ -8,5 +8,6 @@ target 'Parstagrama' do
   # Pods for Parstagrama
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MessageInputBar'
 
 end
